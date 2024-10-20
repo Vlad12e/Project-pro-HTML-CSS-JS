@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.miushi.ua</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<div class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo">
+</div>
+<div class="start_info">
+    <img src="img/maps-and-flags.png" alt="city:" class="mapL">
+    <h6 class="city">г.Киев</h6>
+    <div class="email">
+        <img src="img/envelope.png" alt="email:" class="emailL">
+        <h6 class="email">modesartemkot@gmail.com</h6>
+    </div>
+    <div class="number__phone"><h6 cla>+380 (800) 333 2 222</h6>
+   <p class="graphic__work">Работаем с 11.00 до 23.00</p></div>
+   <div class="button"><button class="btn1">Обратный звонок</button></div>
+</div>
+    <nav>  
+        <div class="lin"></div>
+        <ul class="menu">  
+            <li><a href="">Меню</a></li>  
+            <li><a href="" class="menu__li_2">Акции и скидки</a></li>  
+            <li><a href="https://www.donationalerts.com/r/kota4iy">Доставка и оплата</a></li>  
+            <li><a href="">Новости</a></li>
+            <li><a href="">Контакты</a></li>
+            <img src="" alt="">
+            <li><a href="">Кабинет</a></li>
+            <img src="" alt="">
+            <li onclick="openModal()" class="open-cart"><a href="">Корзина</a></li>  
+        </ul>  
+    </nav>
+    <div class="slider">
+        <div class="slides">
+          <img src="img/slider-img.png" alt="Image 1" class="slide">
+          <img src="img/slider-img.png" alt="Image 2" class="slide">
+          <img src="img/slider-img.png" alt="Image 3" class="slide">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"><img src="img/left-arrow.png" alt=""></a>
+        <a class="next" onclick="plusSlides(1)"><img src="img/right-arrow.png" alt=""></a>  
+    
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>  
+</header>
+<main>
+    <div class="goods1">
+        <div class="set1">
+            <img src="img/set_0.png" alt="" class="set__0">
+            <div class="set__0_info">
+                <h5 class="h5__set_name">Сет №10</h5>
+                <p>72 шт.| 1560 г.| 1700 Kkal</p>
+                <h5>2050<sup>грн.</sup></h5>
+                <button class="circle" onclick="decreaseQuantity('set0')"><h6 class="minus">&minus;</h6></button>
+                <h6 class="set__0_value" id="set0Value">1</h6>
+                <button class="circle2" onclick="increaseQuantity('set0')"><h6 class="plus">&plus;</h6></button>
+                <button class="good_cart add-to-cart" onclick="addToCart('Сет №10', 2050, 'set0')">В корзину<img src="img/good_cart.png" alt=""></button>
+            </div>
+        </div>
+        <div class="set1">
+            <img src="img/set_1.png" alt="" class="set__0">
+            <div class="set__0_info">
+                <h5 class="h5__set_name">Сет №8</h5>
+                <p>24 шт.| 960 г.| 800 Kkal</p>
+                <h5>1590<sup>грн.</sup></h5>
+                <button class="circle" onclick="decreaseQuantity('set1')"><h6 class="minus">&minus;</h6></button>
+                <h6 class="set__0_value" id="set1Value">1</h6>
+                <button class="circle2" onclick="increaseQuantity('set1')"><h6 class="plus">&plus;</h6></button>
+                <button class="good_cart add-to-cart" onclick="addToCart('Сет №8', 1590, 'set1')">В корзину<img src="img/good_cart.png" alt=""></button>
+            </div>
+        </div>
+        <div class="set1">
+            <img src="img/set_2.png" alt="" class="set__0">
+            <div class="set__0_info">
+                <h5 class="h5__set_name">Сет №5</h5>
+                <p>14 шт.| 450 г.| 400 Kkal</p>
+                <h5>510<sup>грн.</sup></h5>
+                <button class="circle" onclick="decreaseQuantity('set2')"><h6 class="minus">&minus;</h6></button>
+                <h6 class="set__0_value" id="set2Value">1</h6>
+                <button class="circle2" onclick="increaseQuantity('set2')"><h6 class="plus">&plus;</h6></button>
+                <button class="good_cart add-to-cart" onclick="addToCart('Сет №5', 510, 'set2')">В корзину<img src="img/good_cart.png" alt=""></button>
+            </div>
+        </div>
+        <div class="set1">
+            <img src="img/set_3.png" alt="" class="set__0">
+            <div class="set__0_info">
+                <h5 class="h5__set_name">Сет №6</h5>
+                <p>16 шт.| 460 г.| 490 Kkal</p>
+                <h5>400<sup>грн.</sup></h5>
+                <button class="circle" onclick="decreaseQuantity('set3')"><h6 class="minus">&minus;</h6></button>
+                <h6 class="set__0_value" id="set3Value">1</h6>
+                <button class="circle2" onclick="increaseQuantity('set3')"><h6 class="plus">&plus;</h6></button>
+                <button class="good_cart add-to-cart" onclick="addToCart('Сет №6', 400, 'set3')">В корзину<img src="img/good_cart.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Ваш кошик</h2>
+            <div id="cart"></div>
+            <div class="cart-summary">
+                <h4>Загальна сума: <span id="totalPrice">0</span> грн</h4>
+            </div>
+            <button onclick="clearCart()" class="clear-cart">Очистити кошик</button>
+        </div>
+    </div>
+</main>
+    
+<section class="advantages">
+    <h2><img src="img/title.png" alt="">10 причин купить у нас<img src="img/title_2.png" alt=""></h2>
+    <div class="advantages-list">
+        <div class="advantage-item">
+            <img src="img/kitchen.png" alt="">
+            <p>100% ручная работа</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/dish.png" alt="">
+            <p>100% свежие ингредиенты</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/money.png" alt="">
+            <p>Самые низкие цены на рынке</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/like_4.png" alt="">
+            <p>Постояный контроль качества на всех этапах</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/fish.png" alt="">
+            <p>Только охлажденная рыба (никакой заморозки)</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/rice.png" alt="">
+            <p>Мы используем только дорогой рис из Японии</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/octopus.png" alt="">
+            <p>Больше начинки, меньше риса!</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/knife_8.png" alt="">
+            <p>Мы не заменяем авокадо огурцом!</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/pizza.png" alt="">
+            <p>Вся пицца готовится из итальянской муки и Итальянского соуса</p>
+        </div>
+        <div class="advantage-item">
+            <img src="img/feather-hand-drawn-outline_10.png" alt="">
+            <p>Мы не используем майонез!</p>
+        </div>
+        <!-- Больше преимуществ... -->
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
