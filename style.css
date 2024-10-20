@@ -379,6 +379,10 @@ transform: translateY(-250px);
 }
 .type {
   color: white;
-  transform: translateY(300px);
+  transform: translateY(200px);
+  margin-left: 100px;
+}
+.miushi {
+  transform: translateY(250px);
   margin-left: 100px;
 }
